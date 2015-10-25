@@ -1,4 +1,4 @@
-library(plyr)
+require(plyr)
 
 #Loading activity and features Ids
 activityLabels <- read.table("UCI HAR Dataset/activity_labels.txt", col.names = c("Id", "Activity"))
