@@ -34,4 +34,4 @@ How to
 - Make sure working directory is set to repository folder
 - run run_analysis.R script
 
-In the repository root directory you find the file 'tidy_data.txt'
+A file 'tidy_data.txt' will be generated
