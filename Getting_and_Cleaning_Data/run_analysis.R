@@ -18,10 +18,13 @@ traindata<-cbind(cbind(xtrain, subjecttrain), ytrain)
 testdata<-cbind(cbind(xtest, subjecttest), ytest)
 datamerged<-rbind(traindata, testdata)
 
+#Filter in only mean and std collumns
 datamerged <- datamerged[grep(".*mean.*|.*std.*|Subject|Activity", names(datamerged))]
 datamerged$Activity <- activityLabels[datamerged$Activity,][,2]
-
+#Compute the mean for each activity and Subject
 data<-ddply(datamerged, c("Subject","Activity"), colwise(mean))
+
+#Order by Subject, to be more presentable
 data <- data[order(data$Subject),]
 
 write.table(data, file = "tidy_data.txt", row.name=FALSE)
