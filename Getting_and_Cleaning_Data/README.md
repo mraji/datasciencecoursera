@@ -28,10 +28,10 @@ You should create one R script called run_analysis.R that does the following:
 How to
 ------
 
-* clone this repository
-* download compressed raw data
-* unzip raw data and copy the directory 'UCI HAR Dataset' to the cloned repository root directory
-* open a R console and set the working directory to the repository root
-* run run_analysis.R script
+- clone this repository
+- download compressed raw data and unzip it
+- copy the directory 'UCI HAR Dataset' in the repo folder
+- Make sure working directory is set to repository folder
+- run run_analysis.R script
 
 In the repository root directory you find the file 'tidy_data.txt'
